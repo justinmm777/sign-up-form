@@ -17,7 +17,7 @@
 }
 .mainImage {
     max-width: 100%; 
-    height: auto 
+    height: 100%;
 }
 
 .photoCredit {
@@ -51,14 +51,12 @@
     height:5rem;
 }
 
-
-
 .rightContainer {
     /* border: 1px solid green; */
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows:repeat(3, 1fr);
-    /* height: 100vh; */
+    height: 100vh;
 }
     
 
@@ -104,15 +102,13 @@ input:focus {
     border-color: blue;
 }
 
-/* input:invalid {
-    border-color: red;
-} */
-
 input:valid {
     background-color: #ddffdd;
     }
 
-
+form input.error-input:invalid {
+    border: 1px solid red;
+}
 .btnContainer {
     /* background-color: lightcoral; */
     grid-column: 1 / 3;
