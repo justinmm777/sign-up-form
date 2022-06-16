@@ -13,3 +13,22 @@ inputFields.forEach((element) => {
         }
     )
 });
+
+// confirm password validation
+const passwordCheck = () => {
+    const password1 = document.getElementById('password').value;
+    const password2 = document.getElementById('confirmPassword').value;
+    if (password1 == '') {
+        console.log(password1)
+    }
+    
+
+}
+
+
+const createAccountBtn = document.querySelector('.createAccountBtn');
+createAccountBtn.addEventListener('click', passwordCheck());
+
+
+
+
