@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <!-- images and logo on left side -->
-         <div class="imageContainer">
+        <div class="imageContainer">
 
             <img class="mainImage" src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="login-image">
             <div class="logoContainer">
@@ -21,9 +21,7 @@
                 <p class="pSignUp">Sign Up Form</p>
             </div>
             <p class="photoCredit">Photo by <a href="https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andras Vas</a> on <a href="https://unsplash.com/s/photos/tech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p> 
-            
-
+            </p>
         </div>
 
         <div class="rightContainer">
@@ -32,35 +30,56 @@
             </div>
 
             <!-- form fields -->
-            <div class="formContainer"></div>
-            <form id="signUpForm" action="">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" tabindex="1" required>
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" tabindex="2" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" tabindex="3" required>
-                <label for="phoneNumber">Phone Number</label>
-                <input type="number" id="phoneNumber" tabindex="4" required>
-                <label for="password">Password</label>
-                <input type="password" 
-                    id="password"
-                    class="password" 
-                    tabindex="5" 
-                    required>
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" 
-                    id="confirmPassword"
-                    class="password" 
-                    tabindex="6"
-                    required>
-    
-                <!-- create account section -->
-                <div class="btnContainer">
-                    <button type="submit" class="createAccountBtn" tabindex="7">Create Account</button>
-                    <p>Already have an account? <span><a href="" class="loginBtn">Log in</a></span></p>
-                </div>
-            </form>
+            <div class="formContainer">
+                <form id="signUpForm" class="form" action="">
+                    <div class="inputContainer">
+                        <div class="column input left ">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" tabindex="1" required>
+                        </div>
+                        <div class="column input right ">
+                            <label  for="lastName">Last Name</label>
+                            <input  type="text" name="lastName" id="lastName" tabindex="2" required>
+                        </div>
+                        <div class="column input left">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" tabindex="3" required>
+                        </div>
+                        <div class="column input right">
+                            <label  for="phoneNumber">Phone Number</label>
+                            <input  type="number" id="phoneNumber" tabindex="4" required>
+                        </div>
+                        <div class="column input left">
+                            <label for="password">Password</label>
+                            <input type="password" 
+                                id="password"
+                                class="password" 
+                                tabindex="5" 
+                                required>
+                        </div>
+                        <div class="column input right">
+                            <label  for="confirmPassword">Confirm Password</label>
+                            <input  type="password" 
+                                id="confirmPassword"
+                                class="password" 
+                                tabindex="6"
+                                required>
+                        </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                     
+
+                    <!-- create account section -->
+                    <div class="btnContainer">
+                        <button type="submit" class="createAccountBtn" tabindex="7">Create Account</button>
+                        <p>Already have an account? <span><a href="" class="loginBtn">Log in</a></span></p>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     
