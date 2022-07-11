@@ -22,7 +22,6 @@ function passwordCheck(event) {
     const error = document.querySelector(".error");
     if (password1 !== password2) {
         error.textContent = "*Passwords do not match";
-        // add error class from js enter text in css
     } else {
         form.submit;
         // clear all the form fields
@@ -31,7 +30,6 @@ function passwordCheck(event) {
     }
     
 }
-
 
 
 const form = document.getElementById("signUpForm");

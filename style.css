@@ -126,7 +126,6 @@ form input.error-input:invalid {
     margin: 0;
 }
 .btnContainer {
-    /* background-color: lightcoral; */
     grid-column: 1 / 3;
     padding: 2rem;
 }
@@ -146,7 +145,6 @@ form input.error-input:invalid {
 .loginBtn {
     text-decoration: none;
     color: rgb(13, 66, 13);
-
 }
 
 
