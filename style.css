@@ -120,6 +120,11 @@ input:valid {
 form input.error-input:invalid {
     border: 1px solid red;
 }
+
+.error {
+    color: red;
+    margin: 0;
+}
 .btnContainer {
     /* background-color: lightcoral; */
     grid-column: 1 / 3;

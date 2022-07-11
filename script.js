@@ -15,20 +15,26 @@ inputFields.forEach((element) => {
 });
 
 // confirm password validation
-const passwordCheck = () => {
-    const password1 = document.getElementById('password').value;
-    const password2 = document.getElementById('confirmPassword').value;
-    if (password1 == '') {
-        console.log(password1)
+function passwordCheck(event) {
+    event.preventDefault();
+    const password1 = document.getElementById("password").value;
+    const password2 = document.getElementById("confirmPassword").value;
+    const error = document.querySelector(".error");
+    if (password1 !== password2) {
+        error.textContent = "*Passwords do not match";
+        // add error class from js enter text in css
+    } else {
+        form.submit;
+        // clear all the form fields
+        form.reset();
+        error.textContent = "";
     }
     
-
 }
 
 
-const createAccountBtn = document.querySelector('.createAccountBtn');
-createAccountBtn.addEventListener('click', passwordCheck());
 
-
+const form = document.getElementById("signUpForm");
+form.addEventListener('submit', passwordCheck);
 
 
